@@ -1,0 +1,64 @@
+.header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: black;
+      .left__header__item {
+            width: 100%;
+            display: flex;
+            .brand__name {
+                  display: flex;
+                  color: white;
+                  position: relative;
+                  left: 40px;      
+            }
+      }
+    
+      .right__header__item{
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 10px;
+            .items {
+                  display: flex;
+                  color: white;
+                  gap: 20px;
+                  .nav__link {
+                        text-decoration: none;
+                        color: white;
+                        font-size: 16px;
+                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                  }
+                  .item__vip {
+                        margin-right: 10px;
+                        .nav__link {
+                              text-decoration: none;
+                        }
+                  }
+            }
+            .brand__logo {
+                  display: block;
+            }
+      }
+}
+@media screen and (max-width: 430px) {
+      .header {
+         .left__header__item {
+            .brand__name {
+                  font-size: 14px;
+                  font-weight: bold;
+            }
+      }
+      }
+}
+@media screen and (max-width: 830px) {
+      .header {
+            .right__header__item {
+                  .items {
+                        display: none;
+                  }
+            }
+      }
+}
+

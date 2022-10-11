@@ -1,0 +1,37 @@
+.navbar {
+      background-color: grey;
+      .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 2em;
+            padding: 40px;
+            .nav__link {
+                  text-decoration: none;
+                  color: white;
+                  font-size: 16px;
+                  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            .left__nav {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  font-size: 18px;
+                  gap: 20px;
+
+            }
+            .right__nav {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;       
+                  font-size: 16px;
+                  gap: 5px;
+                  .item__signin {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 5px;
+                  }
+                 }
+      }
+}

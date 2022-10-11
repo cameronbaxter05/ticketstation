@@ -1,0 +1,29 @@
+.home {
+      .home__content {
+            .first__content {
+                  min-height: 30vw;
+                  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 60%, transparent 90%), 
+                        url("https://uk.tmconst.com/ccp-salesforce-images/UK/TomGrennan23_2809_1440x450.jpg?auto=webp");
+            
+                  display: flex;
+                  flex-direction: column;
+                  align-self: flex-end;
+                  
+                  .content {
+                        color: white;
+                        display: flex;
+                        flex-direction: column;
+                        align-self: flex-end;
+                        gap: 5px;
+                        margin-left: 20px;
+                        .btn {
+                        width: 10vw;
+                        height: 6vh;
+                        font-size: 18px;
+                        font-weight: 500;
+                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                  }
+            }
+                  } 
+      }
+}
