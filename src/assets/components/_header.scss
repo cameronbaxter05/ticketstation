@@ -24,6 +24,9 @@
                   display: flex;
                   color: white;
                   gap: 20px;
+                  .item {
+                        list-style-type: none;
+                  }
                   .nav__link {
                         text-decoration: none;
                         color: white;
@@ -49,9 +52,18 @@
                   font-size: 14px;
                   font-weight: bold;
             }
+         .right__header__item {
+            .items {
+                  .nav__link {
+
+                  }
+            }
+         }
       }
       }
 }
+ 
+
 @media screen and (max-width: 830px) {
       .header {
             .right__header__item {
@@ -61,4 +73,3 @@
             }
       }
 }
-

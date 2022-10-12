@@ -1,4 +1,5 @@
 import React from 'react'
+import Parent from '../assets/components/PortalModal'
 import { Navbar } from '../components'
 
 const Home = () => {

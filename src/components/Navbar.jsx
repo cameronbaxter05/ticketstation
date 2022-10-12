@@ -1,44 +1,49 @@
 import React from 'react';
 import AccountCircleRoundedIcon from '@mui/icons-material/AccountCircleRounded';
 import { Link } from 'react-router-dom';
+import { MenuOutlined } from '@mui/icons-material';
 const Navbar = () => {
   return (
-    <div className='navbar'>
-      <div className='nav'>
-        <div className='left__nav'>
-          <div className='item__home'>
+    <header className='navbar'>
+      <nav className='nav'>
+        <ul className='left__nav'>
+          <li className=' item item__home'>
             <Link to="/" className='nav__link'>Home</Link>
-          </div>
-          <div className='item__news'>
+          </li>
+          <li className='item item__news'>
             <Link to='/news' className='nav__link'>News</Link>
-          </div>
-          <div className='item__about'>
+          </li>
+          <li className=' item item__about'>
             <Link to='/about' className='nav__link'>Arts</Link>
-          </div>
-          <div className='item__contact'>
+          </li>
+          <li className='item item__contact'>
             <Link to='/contact' className='nav__link'>Theatre & Comedy</Link>
-          </div>
+          </li>
 
-          <div className='item__about'>
+          <li className='item item__about'>
             <Link to='/about' className='nav__link'>About</Link>
-          </div>
-          <div className='item__contact'>
+          </li>
+          <li className='item item__contact'>
             <Link to='/contact' className='nav__link'>Contact</Link>
-          </div>
-        </div>
-        <div className='right__nav'>
-          <div className='item__signin'>
+          </li>
+        </ul>
+        <ul className='right__nav'>
+          <li className='item item__signin'>
             <AccountCircleRoundedIcon color={'white'} size={35} />
             <Link to='/signin' className='nav__link'>
                 Signin</Link>
-          </div>
+          </li>
           <span>/</span>
-          <div className='item__register'>
+          <li className='item item__register'>
             <Link to='/register' className='nav__link'>Register</Link>
-          </div>
-        </div>
-      </div>
-    </div>
+          </li>
+
+        <li className="item items__menu">
+          <MenuOutlined size={45} color={'white'} />
+        </li>
+        </ul>
+      </nav>
+    </header>
   )
 }
 

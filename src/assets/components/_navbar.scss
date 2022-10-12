@@ -4,7 +4,6 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin: 0 2em;
             padding: 40px;
             .nav__link {
                   text-decoration: none;
@@ -18,6 +17,9 @@
                   align-items: center;
                   font-size: 18px;
                   gap: 20px;
+                  .item {
+                        list-style-type: none;
+                  }
 
             }
             .right__nav {
@@ -26,12 +28,35 @@
                   align-items: center;       
                   font-size: 16px;
                   gap: 5px;
+                  .item {
+                        list-style-type: none;
+                  }
                   .item__signin {
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         gap: 5px;
                   }
+                  .items__menu {
+                        display: none;
+                  }
                  }
+      }
+}
+
+@media screen and (max-width: 430px) {
+      .navbar {
+            .nav {
+                  .right__nav {
+
+                     .item {
+                        list-style-type: none;
+                  }
+                  .items__menu {
+                        display: flex;
+                  }
+                                    
+            }
+            }
       }
 }
