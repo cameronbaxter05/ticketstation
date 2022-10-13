@@ -1,7 +1,6 @@
-export { default as Header } from './Header';
-export { default as Navbar } from './Navbar';
-export { default as NewsList } from './NewsList';
-export { default as NewsSlide } from './NewsSlide';
-export { default as ContactForm } from './ContactForm';
-export { default as Form } from './Form';
-export { default as OtherLinks } from './OtherLinks';
+export { default as Header } from "./navigation/Header";
+export { default as Navbar } from "./navigation/Navbar";
+export { default as NewsList } from "./news/NewsList";
+export { default as NewsSlide } from "./news/NewsSlide";
+export { default as ContactForm } from "./forms/ContactForm";
+export { default as OtherLinks } from "./footer/OtherLinks";

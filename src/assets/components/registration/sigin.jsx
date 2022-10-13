@@ -1,9 +1,7 @@
-import React from 'react'
-import { createPortal } from 'react-dom'
+import React from "react";
+import { createPortal } from "react-dom";
 const sigin = () => {
-  return (
-    <div>sigin</div>
-  )
-}
+  return <div>sigin</div>;
+};
 
-export default sigin
+export default sigin;
