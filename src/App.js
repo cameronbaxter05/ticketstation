@@ -6,7 +6,6 @@ const App = () => {
   return (
     <div className="app">
       <Header />
-      <Navbar />
       <Routes>
         <Route index path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />

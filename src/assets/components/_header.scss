@@ -1,90 +1,25 @@
-$left__header__logo:  '../../public/img';
-@function get-path-to-seests($left__header__logo){
-      @return $left__header__logo;
-}
 .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
       background-color: rgb(21, 157, 202);
+      .top__header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 2em 0 2em;
       .left__header__item {
             width: 100%;
             display: flex;
-            .brand__name {
+            .nav__link {
                   display: flex;
                   color: white;
-                  position: relative;
-                  left: 40px;      
+                  font-size: 22px;
+                  text-decoration: none;
+                  font-weight: 600;
             }
       }
-    
-      .middle__header__item{
-            width: 100%;
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            gap: 10px;
-            .items {
-                  display: flex;
-                  color: white;
-                  gap: 20px;
-                  .item {
-                        list-style-type: none;
-                  }
-                  .nav__link {
-                        text-decoration: none;
-                        color: white;
-                        font-size: 16px;
-                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                  }
-                  .item__vip {
-                        margin-right: 10px;
-                        .nav__link {
-                              text-decoration: none;
-                        }
-                  }
-            }
+      .middle__header__item {
             .brand__logo {
-                  display: block;
-             }
-      }
-}
-
-/* Media Query for Mobile Devices */
-@media (max-width: 480px) {
-      body {
-            background-color: red;
-      }
-}
-      
-/* Media Query for low resolution  Tablets, Ipads */
-@media (min-width: 481px) and (max-width: 767px) {
-      .header {
-            display: flex;
-            .middle__header__item {
-                  display: none;
+                  width: 45px;
+                  height: 45px;
             }
-      }
-
-}
-      
-/* Media Query for Tablets Ipads portrait mode */
-@media (min-width: 768px) and (max-width: 1024px) {
-      body {
-            background-color: blue;
-      }
-}
-      
-/* Media Query for Laptops and Desktops */
-@media (min-width: 1025px) and (max-width: 1280px) {
-      body {
-            background-color: green;
-      }
-}
-      
-/* Media Query for Large screens */
-@media (min-width: 1281px) {
-      body {
-            background-color: white;
-      }
+      }}
 }
